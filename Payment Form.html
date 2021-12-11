@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apni Kaksha|Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+    <form action="">
+      <h1 class="main_heading">Payment Form</h1>
+      * is required
+      <hr/>
+      <h2>Contact Details</h2>
+      <p>Name:* <input type="text" name="name" required placeholder="Om Pandey"></p>
+      <hr/>
+      <fieldset>
+      <legend>Gender</legend>
+      <p>
+        Male <input type="radio" name="gender" id="gender"> Female
+        <input type="radio" name="gender" id="gender">
+      </p>
+      </fieldset>
+      <p>
+          Address: 
+          <textarea name="address" id="address" cols="-10" rows="-50" placeholder="Enter your address"></textarea>
+      </p>
+      <p>
+          Email:* <input type="email" name="email" id="email" required placeholder="abc@gmail.com">
+      </p>
+      <p>
+          pincode:<input type="number" name = "pincode" id = "pincode" placeholder="******">
+      </p>
+
+      <h2>Payment Info</h2>
+      <p>Select card type:
+          <select name="Card_Type" id="Card_Type">
+          <option value="--Select--">--Select--</option>
+          <option value="visa">visa</option>
+          <option value="rupay">rupay</option>
+          </select>
+      </p>
+      <p>
+        card number:* <input type="number" name = "Card Number" id = "Card No." required placeholder="1234-5678-8900-5656">
+      </p>
+      <p>
+        expiration date:<input type="date" name="Expiration date" id="Exp date">
+      </p>
+      <p>
+        CVV:* <input type="password" name="CVV" id="cvv" required placeholder="***">
+      </p>
+      <input type="submit" value="Pay Now">
+
+    </form>
+    </div>
+  </body>
+</html>
